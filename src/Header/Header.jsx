@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
+import Search from "./Search";
 
 const Header = () => {
   return (
@@ -8,19 +9,7 @@ const Header = () => {
         <Logo />
 
         <div className="flex items-center gap-4 relative">
-          <form action="#">
-            <div className="flex items-center space-x-2 py-2 px-3 group focus-within:bg-black/30 transition-all border-b border-white/50 focus-within:border-b-0 focus-within:rounded-md">
-              <input
-                className="bg-transparent  placeholder:text-white text-white w-full text-xs md:text-base outline-none border-none"
-                type="search"
-                placeholder="Search Location"
-                required
-              />
-              <button type="submit">
-                <img src="./assets/search.svg" />
-              </button>
-            </div>
-          </form>
+           <Search />
           <div className="p-2 hover:bg-black/30 cursor-pointer flex gap-2 items-center rounded-md transition-all">
             <img src="./assets/heart.svg" alt="" />
             <span>Favourite Locations</span>
